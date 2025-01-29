@@ -25,7 +25,7 @@ with the objects you upload into your bucket.
 9. For **Bucket Versioning**, I chose **Enabled**.
 10. **Create bucket**
 
-![Bucket](/src/bucket-creation.png)
+![Bucket](/amazon-s3/src/bucket-creation.png)
 
 ## Upload Website Files to S3
 I uploaded two files to my S3 bucket - they were an index.html file and an
@@ -35,7 +35,7 @@ website and the output.css file is the styles I want my website to display.
 2. I selected **Add files** and uploaded my index.html file and output.css file.
 3. **Upload**
 
-![File-Uploads](/src/file-uploads.png)
+![File-Uploads](/amazon-s3/src/file-uploads.png)
 
 ## Static Website Hosting on S3
 Web hosting means storing your HTML file (and the other files for your website)
@@ -48,7 +48,7 @@ on a web server, so it's accessible online.
 6. For **Index document**, I entered index.html.
 7. **Save changes**.
 
-![Static-Website-Hosting](/src/static-website-hosting.png)
+![Static-Website-Hosting](/amazon-s3/src/static-website-hosting.png)
 
 ## Bucket Endpoints
 Once static website is enabled, S3 produces a bucket endpoint URL, which is
@@ -57,7 +57,7 @@ Forbidden' on the webpage. The reason for this error was that my objects in my
 bucket are private by default. This default setting helps keep my account's data
 secure.
 
-![Error](/src/error.png)
+![Error](/amazon-s3/src/error.png)
 
 To resolve this connection error:
 1. I selected my files under the **Objects** tab.
@@ -65,7 +65,7 @@ To resolve this connection error:
 3. Selected **Make public using ACL**.
 4. Refresh URL webpage. 
 
-![Calculator-Webpage](/src/s3-website.png)
+![Calculator-Webpage](/amazon-s3/src/s3-website.png)
 
 ### Deleting Resources
 To avoid any charges for this project, I deleted my bucket.
