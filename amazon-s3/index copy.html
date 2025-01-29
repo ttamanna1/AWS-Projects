@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Calculator</title>
+</head>
+<body class="m-0 p-0 font-poppins bg-[#edbce4]">
+  <div class="container w-full h-screen flex items-center justify-center">
+    <div class="calculator bg-[#bb65ab] p-8 rounded-2xl shadow-2xl">
+      <form>
+        <div class="display flex justify-end my-5">
+          <input type="text" name="display" class="text-right flex-1 text-4xl shadow-2xs" readonly>
+        </div>
+        <div>
+          <input type="button" value="AC" onclick="display.value= ''" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="DE" onclick="display.value= display.value.toString().slice(0, -1)" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="." onclick="display.value+= '.'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+          <input type="button" value="/" onclick="display.value+= '/'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+        </div>
+        <div>
+          <input type="button" value="7" onclick="display.value+= '7'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="8" onclick="display.value+= '8'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="9" onclick="display.value+= '9'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="*" onclick="display.value+= '*'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+        </div>
+        <div>
+          <input type="button" value="4" onclick="display.value+= '4'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="5" onclick="display.value+= '5'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="6" onclick="display.value+= '6'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="-" onclick="display.value+= '-'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+        </div>
+        <div>
+          <input type="button" value="1" onclick="display.value+= '1'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="2" onclick="display.value+= '2'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="3" onclick="display.value+= '3'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="+" onclick="display.value+= '+'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+        </div>
+        <div>
+          <input type="button" value="00" onclick="display.value+= '00'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="0" onclick="display.value+= '0'" class="border-0 outline-0 w-16 h-16 rounded-xl shadow-xl bg-transparent text-white text-lg cursor-pointer m-2">
+          <input type="button" value="=" onclick="display.value= eval(display.value)" class="border-0 outline-0 w-36 h-16 rounded-xl shadow-xl bg-transparent text-lg cursor-pointer m-2 text-pink-300">
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
