@@ -69,3 +69,5 @@ To resolve this connection error:
 
 ### Deleting Resources
 To avoid any charges for this project, I deleted my bucket.
+
+**Thanks to nextwork.org for this project.**
